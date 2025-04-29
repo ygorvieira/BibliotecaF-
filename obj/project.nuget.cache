@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "b1fddOIVZXQ=",
+  "success": true,
+  "projectFilePath": "C:\\PROJETOS\\FSharp\\Biblioteca\\Biblioteca.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ygoru\\.nuget\\packages\\fsharp.core\\8.0.301\\fsharp.core.8.0.301.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Ocorreu um erro ao obter os dados de vulnerabilidade do pacote: Não é possível carregar o índice de serviço para a origem https://nuget.medgrupo.com.br/v3/index.json."
+    }
+  ]
+}
