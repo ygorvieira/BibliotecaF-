@@ -8,6 +8,7 @@
   <ItemGroup>
     <Compile Include="lib\midia.fs" />
     <Compile Include="lib\livro.fs" />
+    <Compile Include="lib\banco_de_arquivos.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
