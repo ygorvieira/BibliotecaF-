@@ -1,11 +1,13 @@
 # Biblioteca de Mídias
 
-Este projeto é uma aplicação F# adapatada com base no livro **Ruby - Aprenda a Programar na Linguagem mais Divertida** da editora **Casa do Código**. Ele gerencia uma biblioteca de mídias, como livros, filmes, CDs e DVDs. A aplicação utiliza serialização YAML para persistir dados e inclui funcionalidades para filtrar mídias por categoria e formatar valores monetários.
+Este projeto é uma aplicação F# adaptada com base no livro [**Ruby - Aprenda a Programar na Linguagem mais Divertida**](https://www.casadocodigo.com.br/products/livro-ruby?_pos=1&_sid=eec1f6e88&_ss=r) da editora [**Casa do Código**](https://www.casadocodigo.com.br). Ele gerencia uma biblioteca de mídias, como livros, filmes, CDs e DVDs. A aplicação utiliza serialização JSON para persistir dados e inclui funcionalidades para filtrar mídias por categoria e calcular valores com desconto.
 
 ## Estrutura do Projeto
 
 - **`lib/midia.fs`**: Contém a definição da classe `Midia`, que representa uma mídia com propriedades como título, valor, desconto e categoria. Também inclui validações para os valores fornecidos e um método para calcular o valor com desconto.
-- **`Program.fs`**: Arquivo principal do programa, onde a classe `Midia` é utilizada para criar instâncias e exibir informações no console.
+- **`lib/livro.fs`**: Define a classe `Livro`, que herda de `Midia` e adiciona propriedades específicas, como autor, ISBN e número de páginas.
+- **`lib/banco_de_arquivos.fs`**: Implementa a classe `BancoDeArquivos`, responsável por salvar e carregar mídias em arquivos JSON.
+- **`Program.fs`**: Arquivo principal do programa, onde as classes são utilizadas para criar instâncias, salvar e carregar mídias, e exibir informações no console.
 
 ## Funcionalidades
 
@@ -18,8 +20,19 @@ Este projeto é uma aplicação F# adapatada com base no livro **Ruby - Aprenda 
   - Método:
     - `ValorComDesconto`: Calcula o valor da mídia com o desconto aplicado.
 
+- **Classe `Livro`**:
+  - Propriedades:
+    - `Autor`: O autor do livro.
+    - `ISBN`: O código ISBN do livro.
+    - `NumeroDePaginas`: O número de páginas do livro.
+
+- **Classe `BancoDeArquivos`**:
+  - Métodos:
+    - `Salva<'T>`: Salva uma mídia no arquivo correspondente em formato JSON.
+    - `Carrega<'T>`: Carrega todas as mídias de um arquivo JSON.
+
 - **Programa Principal**:
-  - Cria uma instância da classe `Midia` e exibe o título e o valor com desconto no console.
+  - Cria instâncias de `Midia` e `Livro`, salva e carrega mídias usando `BancoDeArquivos`, e exibe informações no console.
 
 ## Como Executar
 
@@ -33,7 +46,7 @@ Este projeto é uma aplicação F# adapatada com base no livro **Ruby - Aprenda 
    ```dotnet build
    ```
 5. Execute o programa:
-   ```
+   ```bash
     dotnet run
    ```
 
