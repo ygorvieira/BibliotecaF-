@@ -21,7 +21,7 @@ Este projeto é uma aplicação F# adapatada com base no livro **Ruby - Aprenda 
 - **Programa Principal**:
   - Cria uma instância da classe `Midia` e exibe o título e o valor com desconto no console.
 
-## C
+## Como Executar
 
 1. Certifique-se de que você tem o .NET SDK instalado (versão 8.0 ou superior).
 2. Clone este repositório ou copie os arquivos para o seu ambiente local.

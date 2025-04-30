@@ -2,6 +2,7 @@ namespace BibliotecaDeMidias
 
 /// Representa uma mídia com título, valor, desconto e categoria
 type Midia(titulo: string, ?valor: float, ?desconto: float, ?categoria: string option) =
+    
     // Valores padrão
     static let VALOR_PADRAO = 10.0
     static let DESCONTO_PADRAO = 0.1
@@ -15,6 +16,9 @@ type Midia(titulo: string, ?valor: float, ?desconto: float, ?categoria: string o
             invalidArg "valor" "O valor deve ser maior que zero"
         if descontoReal < 0.0 || descontoReal > 1.0 then
             invalidArg "desconto" "O desconto deve estar entre 0 e 1"
+
+    // Propriedade estática para acessar DESCONTO_PADRAO
+    static member DescontoPadrao = DESCONTO_PADRAO
 
     // Propriedades
     member this.Titulo = titulo 

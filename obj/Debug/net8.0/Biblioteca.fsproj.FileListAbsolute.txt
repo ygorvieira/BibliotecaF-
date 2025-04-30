@@ -27,3 +27,4 @@ C:\PROJETOS\FSharp\Biblioteca\obj\Debug\net8.0\refint\Biblioteca.dll
 C:\PROJETOS\FSharp\Biblioteca\obj\Debug\net8.0\Biblioteca.pdb
 C:\PROJETOS\FSharp\Biblioteca\obj\Debug\net8.0\Biblioteca.genruntimeconfig.cache
 C:\PROJETOS\FSharp\Biblioteca\obj\Debug\net8.0\ref\Biblioteca.dll
+C:\PROJETOS\FSharp\Biblioteca\obj\Debug\net8.0\Biblioteca.sourcelink.json
