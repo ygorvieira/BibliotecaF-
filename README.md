@@ -43,13 +43,29 @@ Este projeto é uma aplicação F# adaptada com base no livro [**Ruby - Aprenda 
    cd c:\PROJETOS\FSharp\Biblioteca
    ```
 4. Compile o projeto:
-   ```dotnet build
+   ```bash
+   dotnet build
    ```
 5. Execute o programa:
    ```bash
-    dotnet run
+   dotnet run
    ```
 
+## Como Executar os Testes Unitários
+
+O projeto utiliza o framework [NUnit](https://nunit.org/) para testes unitários. Para rodar os testes:
+
+1. Navegue até o diretório do projeto de testes:
+   ```bash
+   cd Tests
+   ```
+2. Execute os testes com o comando:
+   ```bash
+   dotnet test
+   ```
+   Isso irá compilar e executar todos os testes unitários presentes no projeto. O resultado será exibido no terminal.
+
 ## Requisitos
-.NET SDK 8.0 ou superior
-Editor de texto ou IDE com suporte a F# (como Visual Studio Code ou JetBrains Rider)
+
+- .NET SDK 8.0 ou superior
+- Editor de texto ou IDE com suporte a F# (como Visual Studio Code ou JetBrains Rider)
